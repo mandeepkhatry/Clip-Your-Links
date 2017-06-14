@@ -1,0 +1,29 @@
+.jumbotron {
+    background-color:#1E748F !important; 
+  	padding: 7px;
+  	margin-top: 5px;
+}
+
+.jumbotron h1{
+	color:#ffffff;
+}
+
+.jumbotron p{
+	color:#ffffff;
+}
+
+
+.label{
+	padding:10px;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+.footer{
+	margin: 50px;
+}
+
+.clipped-links{
+
+	margin-top: 40px;
+}
