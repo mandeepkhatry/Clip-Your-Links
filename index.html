@@ -17,7 +17,7 @@
 
   </head>
 
-  <body>
+  <body onload='all()'>
     <div class="container">
       <div class="jumbotron ">
       <div class="text-center">
@@ -43,16 +43,18 @@
         </div>
         <div class="col-lg-7">
           <span class="label label-info pull-right" type="button">
-               Number of links clipped: <span class="badge">0</span>
-        </span>
-        
-        <div class="clipped-links">
+               Number of links clipped: <span class="badge" id="total"></span>
+          </span>
+        <br>
+        <br>
+        <div class="well">
+              
+        <div id="clipped-links">
 
             <!-- Clipped Links Added-->
-
+           
         </div>
-
-       </div>
+        </div>
    
       </div>
    

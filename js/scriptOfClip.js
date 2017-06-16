@@ -31,8 +31,34 @@ document.getElementById('my-form').addEventListener('submit',function(event){
     //set everything back
     localStorage.setItem('clippedLinks', JSON.stringify(info));
   }
-  	document.getElementById('')
+  	
 	//Clicking on a "Submit" button, prevent it from submitting a form so It works get printed but not submitted so it holds
 	event.preventDefault();
 
 });
+
+function all(){
+	//JSON.parse(JSON string) -> object
+	//JSON.parse(array of JSON sting) -> Array of objects
+	// Converting to array of objects for applying methods like Address Linkname for further use
+	var get = JSON.parse(localStorage.getItem('clippedLinks'));
+	if(get!=null){
+	var l = get.length;
+	var i = null;
+	document.getElementById('total').innerHTML = l;
+	for(i=0;i<l;i++){
+		var linkname = get[i].Linkname;
+		var address = get[i].Address;
+
+		var allClipped = document.getElementById('clipped-links');
+
+		allClipped.innerHTML += 	'<h3>'+linkname+'</h3>'+
+									'<a class="btn btn-default" href="'+address+'" target="_blank">Visit</button>'+
+              						'<a class="btn btn-danger" onclick="removeItem()">Delete</button>';
+
+	}		
+	}		
+}
+function removeItem(){
+	
+}
