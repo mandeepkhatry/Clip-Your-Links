@@ -31,7 +31,7 @@ document.getElementById('my-form').addEventListener('submit',function(event){
     //set everything back
     localStorage.setItem('clippedLinks', JSON.stringify(info));
   }
-  	
+  	window.location.reload();
 	//Clicking on a "Submit" button, prevent it from submitting a form so It works get printed but not submitted so it holds
 	event.preventDefault();
 
